@@ -2,7 +2,7 @@
 
 > My dandy Nuxt.js project
 
-## Build Setup
+## Setup
 
 ``` bash
 # install dependencies
@@ -17,6 +17,16 @@ $ npm run start
 
 # generate static project
 $ npm run generate
+```
+
+## Storybook
+``` bash
+npm run storybook
+```
+
+## Visual automated tests
+``` bash
+npm run test:integration
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
