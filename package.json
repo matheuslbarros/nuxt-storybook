@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-storybook",
+  "version": "1.0.0",
+  "description": "My dandy Nuxt.js project",
+  "author": "Matheus Barros",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "storybook": "start-storybook",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@storybook/vue": "^5.3.13",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-vue": "^2.0.2",
+    "eslint": "^6.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2"
+  }
+}
