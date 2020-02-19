@@ -9,7 +9,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "storybook": "start-storybook",
+    "storybook": "start-storybook -p 9009 -s public",
+    "jest:integration": "jest -c integration/jest.config.js",
+    "test:integration": "start-server-and-test storybook http-get://localhost:9009 jest:integration",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
@@ -22,6 +24,11 @@
     "babel-eslint": "^10.0.1",
     "babel-preset-vue": "^2.0.2",
     "eslint": "^6.1.0",
-    "eslint-plugin-nuxt": ">=0.4.2"
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "jest": "^25.1.0",
+    "jest-image-snapshot": "^2.12.0",
+    "jest-puppeteer": "^4.4.0",
+    "puppeteer": "^2.1.1",
+    "start-server-and-test": "^1.10.8"
   }
 }
